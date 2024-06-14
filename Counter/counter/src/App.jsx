@@ -17,6 +17,7 @@ function App() {
     // setCounterValue(counterValue - 1);
     if (counterValue <= 0) {
       setCounterValue(0);
+      alert("value cant be negative");
     } else {
       setCounterValue(counterValue - 1);
     }
