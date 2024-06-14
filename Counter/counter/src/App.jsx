@@ -5,11 +5,21 @@ function App() {
   const [counterValue, setCounterValue] = useState(0);
 
   const increaseValue = () => {
-    setCounterValue(counterValue + 1);
+    // setCounterValue(counterValue + 1);
+    if (counterValue >= 20) {
+      setCounterValue(20);
+    } else {
+      setCounterValue(counterValue + 1);
+    }
   };
 
   const decreaseValue = () => {
-    setCounterValue(counterValue - 1);
+    // setCounterValue(counterValue - 1);
+    if (counterValue <= 0) {
+      setCounterValue(0);
+    } else {
+      setCounterValue(counterValue - 1);
+    }
   };
 
   const resetValue = () => {
